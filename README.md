@@ -11,6 +11,8 @@
 
 [Web Basics](#web-basics)
 
+[Rotas e Cabeçalhos](#rotas-e-cabeçalhos)
+
 
 
 ### Web Basics
@@ -19,3 +21,8 @@
 + Módulos 
 + Três componentes básicos (Handler, Router, Web Server)
 
+### Rotas e Cabeçalhos
+> Aula do dia: 30/03
+
++ Rotas
++ Http Headers
