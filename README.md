@@ -21,6 +21,8 @@
 
 [Testes](#testes)
 
+[Ajustes](#ajustes)
+
 ### Web Basics
 > Aula do dia: 28/03
 
@@ -55,3 +57,11 @@
 ### Testes 
 > Aula do dia: 20/04 
 
+### Helpers
+> Aula do dia: 27/04
+
++ Helpers
++ Dois princípios novos
+  +  Princípio da 
+Responsabilidade Única
+  + Don’t Repeat Yourself (DRY)

@@ -1,4 +1,5 @@
 //Comando para rodar o site: cd SnippetBox e logo dps go run cmd/web/*
+
 package main
 
 import (
@@ -27,22 +28,14 @@ func main() {
         infoLog: infoLog,
    }
 
-  
-	//Conexão ao servidor:
-  mux := http.NewServeMux()
-
-  //Caminho relativo:
-  mux.HandleFunc("/", app.home)
-
-  //Caminhos absolutos:
-  mux.HandleFunc("/snippet", app.showSnippet)
-  mux.HandleFunc("/snippet/create", app.createSnippet)
-
-  //Criação de um manipulador (handler) de servidor de arquivos (file server)
-  fileServer := http.FileServer(http.Dir("./ui/static/"))
-  mux.Handle("/static/",http.StripPrefix("/static",fileServer))
+   //Guardamos todas as configurações do servidor nessa variável
+   srv := &http.Server{
+      Addr: *addr, 
+      ErrorLog: errorLog, 
+      Handler: app.routes(), 
+   }
   
    infoLog.Printf("Inicializando o servidor na porta %s\n", *addr)
-   err := http.ListenAndServe(*addr, mux)
+   err := srv.ListenAndServe()
    errorLog.Fatal(err)
 }
