@@ -1,0 +1,14 @@
+Username: QH7S9cJJ7J
+
+Database name: QH7S9cJJ7J
+
+Password: c4mr1j47e4
+
+Server: remotemysql.com
+
+Port: 3306
+
+
+//String para conexão do banco de dados 
+
+QH7S9cJJ7J:c4mr1j47e4@tcp(remotemysql.com)/QH7S9cJJ7J?parseTime=true

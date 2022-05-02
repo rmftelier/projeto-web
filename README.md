@@ -65,3 +65,9 @@
   +  Princípio da 
 Responsabilidade Única
   + Don’t Repeat Yourself (DRY)
+
+### Conectando o BD
+> Aula do dia: 02/05
+
++ Database Driver
++ DSN ou Connection String
