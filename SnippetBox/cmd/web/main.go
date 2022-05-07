@@ -3,20 +3,22 @@
 package main
 
 import (
-  "flag"
+	"database/sql"
+	"flag"
 	"log"
 	"net/http"
-  "os"
-  "database/sql"
+	"os"
 
-  _ "github.com/go-sql-driver/mysql"
+	_ "github.com/go-sql-driver/mysql"
+  
+	"github.com/rmftelier/projeto-web/pkg/models/mysql"
 )
 
 //Criação do struct
 type application struct{
     errorLog *log.Logger
     infoLog *log.Logger
-    
+    snippets *mysql.SnippetModel
 }
 
 func main() {
@@ -41,6 +43,7 @@ func main() {
    app := &application{
         errorLog: errorLog,
         infoLog: infoLog,
+        snippets:&mysql.SnippetModel{DB:db},
    }
 
    //Guardamos todas as configurações do servidor nessa variável

@@ -4,7 +4,8 @@
 >
 > Período: 5º | Professor: Ricardo Mendes 
 > 
-> Repositório da matéria: 🔗[link](https://github.com/rmcs87/cc5m_2022_1)
+> Links🔗: [Github](https://github.com/rmcs87/cc5m_2022_1) e [Repl.it](https://replit.com/@RicardoMendes2/cc5m)
+
 
 
 ## 🗂️ 
@@ -21,7 +22,9 @@
 
 [Testes](#testes)
 
-[Ajustes](#ajustes)
+[Helpers](#helpers)
+
+[Conectando o BD](#conectando-o-bd)
 
 ### Web Basics
 > Aula do dia: 28/03
@@ -67,7 +70,7 @@ Responsabilidade Única
   + Don’t Repeat Yourself (DRY)
 
 ### Conectando o BD
-> Aula do dia: 02/05
+> Aulas do dias: 02/05 e 04/05
 
 + Database Driver
 + DSN ou Connection String
