@@ -1,0 +1,26 @@
+<!-- Responsável por mostrar o snippet solicitado -->
+
+ <!-- Esse arquivo está utilizando o arquivo base.layout. 
+O ponto representa o snippet mas podemos passar qualquer estrutura -->
+
+<!-- O que for dinâmico estará dentro de chaves duplas -->
+{{template "base" .}} 
+
+<!-- O título será o ID do nosso Snippet -->
+{{define "title"}} Snippet {{.ID}} {{end}}
+
+{{define "body"}}
+    <div class="snippet">
+        <div class="metadata">
+           <strong>{{.Title}} </strong>
+           <span>#{{.ID}} </span>
+        </div>
+        <pre> <code> {{.Content}} </code> </pre>
+        <div class="metadata">
+            <time>Created: {{.Created}} </time>
+            <time>Expires: {{.Expires}} </time>
+        </div>
+    </div>
+{{end}}
+
+<!--- Pre -> utiliza todos os caracteres que o usuário escreveu no Snippet -->

@@ -26,6 +26,8 @@
 
 [Conectando o BD](#conectando-o-bd)
 
+[Templates Dinâmicos](#templates-dinâmicos)
+
 ### Web Basics
 > Aula do dia: 28/03
 
@@ -69,8 +71,15 @@
 Responsabilidade Única
   + Don’t Repeat Yourself (DRY)
 
-### Conectando o BD
-> Aulas do dias: 02/05 e 04/05
+### Criando e Conectando o BD
+> Aulas dos dias: 02, 04, 09 e 11/05 
 
 + Database Driver
 + DSN ou Connection String
++ Models e SQL
+
+### Templates Dinâmicos 
+> Aula do dia: 16/05
+
+**Obs**: O escopo do trabalho do 2° bimestre termina nesse assunto. 
+
